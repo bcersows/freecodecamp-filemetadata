@@ -11,7 +11,7 @@ html(lang="en")
     main
       h1 Welcome to bcersows's File Metadata service
       p You can upload a file and get its size in Bytes.
-      form#upload(action="upload" method="post" enctype="multipart/form-data")
+      form#upload(action=base+"/upload" method="post" enctype="multipart/form-data")
         label Upload your file!
           input#myupload(name="myupload" type="file")
         button#submit(type="submit") Upload!
